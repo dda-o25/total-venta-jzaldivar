@@ -1,15 +1,20 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Determinar total de venta.
+Si la venta es mayor a 1000, aplicar 5% de descuento.
 """
 
 # Declaraciones
-CONSTANTE = valor
+MIN_VENTA_P_DESC = 1000
+DESCUENTO = 0.05
 
 # Entradas
-entrada = input()
+cantidad = float(input("¿Cuántos artículos? "))
+precio = float(input("Precio unitario: "))
 
 # Proceso
-variable = expresion
+total = cantidad * precio
+if total > MIN_VENTA_P_DESC:
+    total = total * (1 - DESCUENTO)
 
 # Salidas
-print(salida)
+print("El total es", total)
