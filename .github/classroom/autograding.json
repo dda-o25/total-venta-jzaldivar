@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Test01: 1x10.0",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 3m python3 total-venta.py",
+      "input": "1\r\n10.0",
+      "output": "10.0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test02: 10x20.0",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 3m python3 total-venta.py",
+      "input": "10\r\n20.0",
+      "output": "200.0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test03: 300x3.33",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 3m python3 total-venta.py",
+      "input": "300\r\n3.33",
+      "output": "999.0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test04: 20x50.0",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 3m python3 total-venta.py",
+      "input": "20\r\n50.0",
+      "output": "1000.0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test05: 20x50.01",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 3m python3 total-venta.py",
+      "input": "20\r\n50.01",
+      "output": "950.1899999999999",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test06: 20x1000.0",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 3m python3 total-venta.py",
+      "input": "20\r\n1000.0",
+      "output": "19000.0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
