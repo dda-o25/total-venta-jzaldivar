@@ -14,7 +14,8 @@ precio = float(input("Precio unitario: "))
 # Proceso
 total = cantidad * precio
 if total > MIN_VENTA_P_DESC:
-    total = total * (1 - DESCUENTO)
+    # total = total * (1 - DESCUENTO)
+    pass
 
 # Salidas
 print("El total es", total)
